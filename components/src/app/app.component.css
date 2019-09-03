@@ -1,0 +1,13 @@
+app-left-pane {
+    float: left;
+    background-color: azure
+}
+
+app-right-pane {
+    float: right;
+    background-color: grey
+}
+
+app-right-pane, app-left-pane {
+    padding: 100px;
+}

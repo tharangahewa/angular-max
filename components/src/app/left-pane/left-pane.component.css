@@ -1,0 +1,15 @@
+app-right-widget, app-left-widget{
+    padding: 100px;
+}
+
+app-left-widget {
+    float: left;
+    background-color: cadetblue
+}
+
+app-right-widget {
+    float: right;
+    background-color: gainsboro
+}
+
+
