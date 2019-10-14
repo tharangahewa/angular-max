@@ -1,0 +1,8 @@
+<div class="container">
+  <app-cockpit (itemCreated)="onItemCreated($event)"></app-cockpit>
+  <hr>
+  <app-server 
+    *ngFor="let server of serverElements "
+    [element]=server
+  ></app-server>
+</div>

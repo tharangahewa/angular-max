@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>I'm in the Display Details App!</h3>
+        
+        <button class="btn btn-primary"  
+        (click)="onButtonClick($event)"
+        >{{ displayText ? 'Hide Details' : 'Display Details' }}</button>
+        
+        <p *ngIf="displayText"
+        >My screct is a scret that even I do not know.</p>
+
+        <p *ngIf="!displayText"
+        >My screct is ...</p>
+
+        <ul *ngIf="clickHistory.length > 0">
+            <li *ngFor="let clickNumber of clickHistory" 
+                [ngStyle]="{'color': clickNumber > 5 ? 'green': 'blue' }"
+            >
+                {{ 'Click ' + clickNumber}}
+            </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
